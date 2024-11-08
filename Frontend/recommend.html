@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, white, red);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        label {
+            font-size: 18px;
+            color: #555;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+        }
+
+        button {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px 0; /* Add margin for spacing */
+            width: 80%; /* Adjust width as needed */
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #b71c1c;
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Movie Recommendations based on Movie Category </h1>
+    <div class="form-container">
+        <form method="POST" action="/submit">
+            <label for="genre">Select a Movie Category for Recommendation</label>
+            <div class="button-container">
+                <button type="submit" name="genre" value="Adventure">Adventure</button>
+                <button type="submit" name="genre" value="Romance">Romance</button>
+                <button type="submit" name="genre"value="Comedy">Comedy</button>
+                <button type="submit"  name="genre" value="Action">Action</button>
+                <button type="submit"  name="genre" value="Drama">Drama</button>
+                <button type="submit" name="genre" value="Thriller">Thriller</button>
+                <button type="submit" name="genre" value="Horror">Horror</button>
+                <button type="submit"  name="genre" value="Mystery">Mystery</button>
+                <button type="submit" name="genre" value="Sci-Fi">Sci-Fi</button>
+                <button type="submit" name="genre" value="Fantasy">Fantasy</button>
+                <button type="submit" name="genre" value="Animation">Animation</button>
+                <button type="submit" name="genre" value="Family">Family</button>
+                <button type="submit"  name="genre" value="Crime">Crime</button>
+                <button type="submit"  name="genre" value="Biography">Biography</button>
+                <button type="submit"  name="genre" value="Musical">Musical</button>
+                <button type="submit"  name="genre" value="War">War</button>
+                <button type="submit"  name="genre" value="Historical">Historical</button>
+                <button type="submit"   name="genre" value="Documentary">Documentary</button>
+                <button type="submit" name="genre"  value="Western">Western</button>
+                <button type="submit" name="genre"  value="Sports">Sports</button>
+                <button type="submit" name="genre" value="Superhero">Superhero</button>
+                <button type="submit" name="genre" value="Psychological">Psychological</button>
+                <button type="submit" name="genre" value="Suspense">Suspense</button>
+                <button type="submit" name="genre" value="Epic">Epic</button>
+                <button type="submit" name="genre" value="Noir">Noir</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
