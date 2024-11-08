@@ -1,0 +1,7 @@
+Run Project :
+
+step 1 : cd Backend 
+
+step 2: run Jupyter File 
+
+stpe 3 : python backend.py 
